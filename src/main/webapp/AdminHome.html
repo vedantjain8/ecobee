@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .admin-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .admin-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .admin-button {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .admin-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="admin-container">
+    <h2>Admin Panel</h2>
+    <button class="admin-button" onclick="addProduct()">Add Product</button>
+    <button class="admin-button" onclick="updateProduct()">Update Product Details</button>
+    <button class="admin-button" onclick="deleteProduct()">Delete Product</button>
+  </div>
+
+  <script>
+    function addProduct() {
+    	
+    	      window.location.href = "AddProduct.jsp";
+    	    
+    }
+
+    function updateProduct() {
+      
+      window.location.href = "UpdateProduct.jsp";
+
+    }
+
+    function deleteProduct() {
+      
+      window.location.href = "DeleteProduct.jsp";
+
+    }
+  </script>
+
+</body>
+</html>
